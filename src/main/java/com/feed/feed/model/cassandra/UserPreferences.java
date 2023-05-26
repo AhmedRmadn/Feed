@@ -1,4 +1,4 @@
-package com.feed.feed.model;
+package com.feed.feed.model.cassandra;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,9 +16,9 @@ import java.util.List;
 @AllArgsConstructor
 public class UserPreferences {
     @PrimaryKey
-    private int userId;
+    private String userId;
 
-    private List<Integer> preferences;
+    private List<String> preferences;
 
 
 }
