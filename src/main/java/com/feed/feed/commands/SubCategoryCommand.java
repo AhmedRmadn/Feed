@@ -13,6 +13,7 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -25,7 +26,9 @@ public class SubCategoryCommand implements Command{
 
     private final sub_categories_repository SCR;
     @Override
+    @Cacheable(value = "newsfeed-PostsData", key = "#request.cacheParam()")
     public Response execute(Request request) {
+        log.info("SubCategory Command called "+request.cacheParam());
         SubCategoryRequest requestCast = (SubCategoryRequest) request;
         SubCategoryResponse response = new SubCategoryResponse();
         response.setSubCategoryId(requestCast.getSubCategoryId());

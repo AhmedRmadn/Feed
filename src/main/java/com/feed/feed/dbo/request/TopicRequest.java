@@ -9,6 +9,11 @@ import lombok.extern.slf4j.Slf4j;
 @Getter
 @Setter
 @RequiredArgsConstructor
-public class TopicRequest extends Request{
+public class TopicRequest implements Request{
     private String topicId;
+
+    @Override
+    public String cacheParam() {
+        return topicId;
+    }
 }

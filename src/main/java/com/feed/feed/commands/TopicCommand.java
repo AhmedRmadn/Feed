@@ -12,6 +12,7 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -25,7 +26,9 @@ public class TopicCommand implements Command{
 
     private final topics_repository TD;
     @Override
+    @Cacheable(value = "newsfeed-PostsData", key = "#request.cacheParam()")
     public TopicResponse execute(Request request) {
+        log.info("TopicCommand called "+request.cacheParam());
         TopicRequest requestCast = (TopicRequest) request;
         TopicResponse response = new TopicResponse();
         response.setTopicId(requestCast.getTopicId());
