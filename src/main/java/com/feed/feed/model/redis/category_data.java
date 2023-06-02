@@ -23,10 +23,10 @@ public class category_data implements Serializable {
     private String category_name;
 
     // old version JSONObject[] most_viewed;
-    private meta_data [] most_viewed;
+    private PostMetadataEntity[] most_viewed;
 
     // old version JSONObject[] most_recent;
-    private meta_data [] most_recent;
+    private PostMetadataEntity[] most_recent;
 
     @Override
     public String toString() {

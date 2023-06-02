@@ -6,7 +6,6 @@ import com.feed.feed.dbo.response.HomePageResponse;
 import com.feed.feed.model.cassandra.UserPreferences;
 import com.feed.feed.model.cassandra.UserSubscriptions;
 import com.feed.feed.model.redis.category_data;
-import com.feed.feed.model.redis.meta_data;
 import com.feed.feed.model.redis.topic_data;
 import com.feed.feed.repository.cassandra.UserPreferencesRepository;
 import com.feed.feed.repository.cassandra.UserSubscriptionsRepository;

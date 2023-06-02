@@ -21,9 +21,9 @@ public class sub_category_data implements Serializable {
 
     private String sub_category_name;
 
-    private meta_data [] most_viewed;
+    private PostMetadataEntity[] most_viewed;
 
-    private meta_data [] most_recent;
+    private PostMetadataEntity[] most_recent;
 
     @Override
     public String toString() {

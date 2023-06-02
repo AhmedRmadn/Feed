@@ -16,7 +16,7 @@ public class post_data {
 
 
     private String key;
-    private meta_data post_meta_data;
+    private PostMetadataEntity post_meta_data;
 
     @Override
     public String toString() {

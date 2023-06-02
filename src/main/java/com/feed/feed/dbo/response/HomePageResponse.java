@@ -1,7 +1,6 @@
 package com.feed.feed.dbo.response;
 
 import com.feed.feed.model.redis.category_data;
-import com.feed.feed.model.redis.meta_data;
 import com.feed.feed.model.redis.topic_data;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

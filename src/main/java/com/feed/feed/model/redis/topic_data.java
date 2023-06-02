@@ -22,9 +22,9 @@ public class topic_data implements Serializable {
 
     private String topic_name;
 
-    private meta_data [] most_viewed;
+    private PostMetadataEntity[] most_viewed;
 
-    private meta_data [] most_recent;
+    private PostMetadataEntity[] most_recent;
 
     @Override
     public String toString() {
