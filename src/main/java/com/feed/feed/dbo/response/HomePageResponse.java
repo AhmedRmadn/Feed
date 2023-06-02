@@ -13,7 +13,7 @@ import java.util.List;
 @Getter
 @Setter
 @RequiredArgsConstructor
-public class HomePageResponse implements Response{
+public class HomePageResponse extends Response{
     String userId;
     List<category_data> preferences;
     List<topic_data> subscriptions;

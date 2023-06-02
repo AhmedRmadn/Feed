@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 @Getter
 @Setter
 @RequiredArgsConstructor
-public class TopicResponse implements Response{
+public class TopicResponse extends Response{
     private String topicId;
     private topic_data posts;
 }

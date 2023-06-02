@@ -9,6 +9,6 @@ import lombok.extern.slf4j.Slf4j;
 @Getter
 @Setter
 @RequiredArgsConstructor
-public class SubCategoryRequest implements Request{
+public class SubCategoryRequest extends Request{
     private String subCategoryId;
 }

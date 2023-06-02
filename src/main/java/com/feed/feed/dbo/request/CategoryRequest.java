@@ -9,7 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 @Getter
 @Setter
 @RequiredArgsConstructor
-public class CategoryRequest implements Request{
+public class CategoryRequest extends Request{
     private String categoryId;
 
 }

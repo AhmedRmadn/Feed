@@ -9,6 +9,6 @@ import lombok.extern.slf4j.Slf4j;
 @Getter
 @Setter
 @RequiredArgsConstructor
-public class TopicRequest implements Request{
+public class TopicRequest extends Request{
     private String topicId;
 }

@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 @Getter
 @Setter
 @RequiredArgsConstructor
-public class SubCategoryResponse implements Response{
+public class SubCategoryResponse extends Response{
     private String subCategoryId;
     private sub_category_data posts;
 }

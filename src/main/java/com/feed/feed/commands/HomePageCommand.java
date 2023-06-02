@@ -80,7 +80,9 @@ public class HomePageCommand implements Command{
 
 
     private  List<category_data> getRecords(int count){
+
         List<category_data> allRecords = (List<category_data>) CR.findAll();
+        count = Math.min(count,allRecords.size());
         return allRecords.subList(0,count);
     }
 
